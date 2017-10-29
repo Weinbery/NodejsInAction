@@ -12,6 +12,7 @@ function handler (req, res) {
 function tick () {
   var now = new Date().toUTCString();
   io.sockets.send(now);
+  console.log(now);
 }
 
 setInterval(tick, 1000);
